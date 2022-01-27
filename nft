@@ -1,0 +1,36 @@
+
+import turtle as t
+import random
+t.colormode(255)
+tim=t.Turtle()
+color1=[(202,164,189),(238,240,245),(150,75,49),(223,201,135)]
+tim.penup()
+tim.setheading(225)
+tim.forward(300)
+tim.setheading(0)
+number = 100
+tim.speed(0)
+tim.hideturtle()
+
+
+for dot_count in range(1, number + 1):
+    tim.dot(20, random.choice(color1))
+    tim.forward(50)
+
+    if dot_count % 10 == 0:
+        tim.setheading(90)
+        tim.forward(50)
+        tim.setheading(180)
+        tim.forward(500)
+        tim.setheading(0)
+
+
+
+
+
+
+
+
+
+screen1=t.Screen()
+screen1.exitonclick()
